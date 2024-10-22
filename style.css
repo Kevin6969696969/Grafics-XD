@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #222831;
+    --bg-color: #33283a;
     --primary-color: #DDDDDD;
     --secondary-color: #1773b1;
     --font:"Nunito Sans", sans-serif;
@@ -30,7 +30,7 @@ h1 {
 }
 
 canvas {
-    max-width: 600px;
+    max-width: 800px;
     margin: 2rem auto;
     background-color: var(--primary-color);
 }

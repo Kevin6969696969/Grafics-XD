@@ -3,7 +3,7 @@ const ctxBarra1 = document.getElementById('graficoBarra1').getContext('2d');
 const graficoBarra1 = new Chart(ctxBarra1, {
     type: 'pie',
     data: {
-        labels: ['medicina', 'Medicina Veterinária', 'Médico Infectologista', 'Técnico de segurança', 'Programador', 'pedreiro', 'Farmacêutico bioquímico', 'engenharia mecânica', 'Ed Fisica', 'agronomia' ],
+        labels: ['medicina', 'Medicina Veterinária', 'Médico Infectologista', 'Técnico de segurança', 'Programador', 'pedreiro', 'Farmacêutico bioquímico', 'engenharia mecânica', 'Ed Fisica', 'agronomia'],
         datasets: [{
             label: 'Resposta dos Alunos',
             data: [1, 2, 1, 1, 2, 1, 1, 3, 1, 1],
@@ -31,14 +31,14 @@ const graficoBarra1 = new Chart(ctxBarra1, {
 // Gráfico de Barra2
 const ctxBarra2 = document.getElementById('graficoBarra2').getContext('2d');
 const graficoBarra2 = new Chart(ctxBarra2, {
-    type: 'bar',
+    type: 'pie',
     data: {
-        labels: ['Sim', 'Não', 'teu pai'],
+        labels: ['Programador', 'medicina' , 'Medicina Veterinária', 'caixa', 'Técnico de segurança do trabalho', 'Estágiário', 'arquiteto', 'personal', 'soldador', 'operador de maquinas agricolas'],
         datasets: [{        
             label: 'Resposta dos Alunos',
-            data: [16, 5, 69],
+            data: [1, 2, 1, 1, 2, 1, 1, 3, 1, 1, 1, 1],
             backgroundColor: [
-                '#F05454', '#46298f', '#DDDDDD', '#222831'
+                '#F05454', '#46298f', '#2cb5b8', '#311c91', '#b827b8', '#27b844', '#a39f4e', '#91b5db', '#ff4093', '#c6ff40'
             ],
             borderColor: '#DDDDDD',
             borderWidth: 1
@@ -48,11 +48,11 @@ const graficoBarra2 = new Chart(ctxBarra2, {
         responsive: true,
         plugins: {
             legend: {
-                position: 'top'
+                position: 'bottom'
             },
             title: {
                 display: true,
-                text: 'Precisa de ensino superior para essa profissão?'
+                text: 'Qual profissão você pretende iniciar sua carreira?'
             }
         }
     }
